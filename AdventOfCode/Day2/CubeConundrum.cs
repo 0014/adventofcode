@@ -43,5 +43,43 @@
 
             return sum;
         }
+
+        public static int PowerOfMinimumSet()
+        {
+            var gameList = File.ReadAllLines("Day2\\games.txt");
+
+            var sum = 0;
+            for (var i = 1; i < gameList.Length + 1; i++)
+            {
+                var gameInfo = gameList[i - 1].Split(": ")[1].Replace(" ", "");
+                var rounds = gameInfo.Split(';');
+                var minGreen = 0; var minBlue = 0; var minRed = 0;
+                foreach (var round in rounds)
+                {
+                    var cubes = round.Split(',');
+                    foreach (var cube in cubes)
+                    {
+                        if (cube.Contains("green"))
+                        {
+                            var n = int.Parse(cube.Replace("green", ""));
+                            if (n > minGreen) minGreen = n;
+                        }
+                        else if (cube.Contains("blue"))
+                        {
+                            var n = int.Parse(cube.Replace("blue", ""));
+                            if (n > minBlue) minBlue = n;
+                        }
+                        else
+                        {
+                            var n = int.Parse(cube.Replace("red", ""));
+                            if (n > minRed) minRed = n;
+                        }
+                    }
+                }
+                sum += minGreen * minBlue * minRed;
+            }
+
+            return sum;
+        }
     }
 }
