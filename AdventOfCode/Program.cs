@@ -1,4 +1,4 @@
-﻿using AdventOfCode2023.Day4;
+﻿using AdventOfCode2023.Day5;
 
 Console.WriteLine(
-    Scratchcards.CountCardsWon());
+    SeedFertilizer.PlantRangeOfSeeds());
