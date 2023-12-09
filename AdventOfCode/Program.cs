@@ -1,4 +1,4 @@
-﻿using AdventOfCode2023.Day5;
+﻿using AdventOfCode2023.Day7;
 
 Console.WriteLine(
-    SeedFertilizer.PlantRangeOfSeeds());
+    CamelCards.TotalWinningsWithJoker());
