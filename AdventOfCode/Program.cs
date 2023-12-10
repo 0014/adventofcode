@@ -1,4 +1,4 @@
-﻿using AdventOfCode2023.Day7;
+﻿using AdventOfCode2023.Day8;
 
 Console.WriteLine(
-    CamelCards.TotalWinningsWithJoker());
+    HauntedWasteland.NavigateWastelandAsGhost());
