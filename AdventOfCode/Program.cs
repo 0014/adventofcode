@@ -1,4 +1,4 @@
-﻿using AdventOfCode2023.Day8;
+﻿using AdventOfCode2023.Day9;
 
 Console.WriteLine(
-    HauntedWasteland.NavigateWastelandAsGhost());
+    MirageMaintenance.ExtrapolateBackwardsOasisData());
