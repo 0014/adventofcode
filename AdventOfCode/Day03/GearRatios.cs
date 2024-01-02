@@ -1,10 +1,10 @@
-﻿namespace AdventOfCode2023.Day3
+﻿namespace AdventOfCode2023.Day03
 {
     public static class GearRatios
     {
         public static int FixEngine()
         {
-            var engineSchema = File.ReadAllLines("Day3\\schema.txt");
+            var engineSchema = File.ReadAllLines("Day03\\schema.txt");
 
             //convert schema into char[][]
             var engineData = new char[engineSchema.Length][];
@@ -95,7 +95,7 @@
         public static int FindWrongGear()
         {
             var engine = new List<EnginePart>();
-            var engineSchema = File.ReadAllLines("Day3\\schema.txt");
+            var engineSchema = File.ReadAllLines("Day03\\schema.txt");
             
             //convert schema into char[][]
             var engineData = new char[engineSchema.Length][];

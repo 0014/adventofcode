@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2023.Day8
+﻿namespace AdventOfCode2023.Day08
 {
     public static class HauntedWasteland
     {
@@ -7,7 +7,7 @@
 
         public static int NavigateWasteland()
         {
-            var mapInfo = File.ReadAllLines("Day8\\map.txt");
+            var mapInfo = File.ReadAllLines("Day08\\map.txt");
             var directions = mapInfo[0];
             var map = new Dictionary<string, string[]>();
             for(var i = 2; i < mapInfo.Length; i++)
@@ -31,7 +31,7 @@
 
         public static long NavigateWastelandAsGhost()
         {
-            var mapInfo = File.ReadAllLines("Day8\\map.txt");
+            var mapInfo = File.ReadAllLines("Day08\\map.txt");
             var directions = mapInfo[0];
             var map = new Dictionary<string, string[]>();
             for (var i = 2; i < mapInfo.Length; i++)

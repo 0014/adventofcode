@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2023.Day7
+﻿namespace AdventOfCode2023.Day07
 {
     public enum HandType
     {

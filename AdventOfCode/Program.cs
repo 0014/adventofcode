@@ -1,4 +1,4 @@
-﻿using AdventOfCode2023.Day9;
+﻿using AdventOfCode2023.Day10;
 
 Console.WriteLine(
-    MirageMaintenance.ExtrapolateBackwardsOasisData());
+    PipeMaze.InnerMaze());

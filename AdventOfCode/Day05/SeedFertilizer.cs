@@ -1,8 +1,8 @@
-﻿namespace AdventOfCode2023.Day5
+﻿namespace AdventOfCode2023.Day05
 {
     public static class SeedFertilizer
     {
-        private static readonly string[] MapData = File.ReadAllLines("Day5\\map.txt");
+        private static readonly string[] MapData = File.ReadAllLines("Day05\\map.txt");
         private static long SeedToSoil(this long source) => source.Map(MapData.GetMap("seed-to-soil map"));
         private static long SoilToFertilizer(this long source) => source.Map(MapData.GetMap("soil-to-fertilizer map"));
         private static long FertilizerToWater(this long source) => source.Map(MapData.GetMap("fertilizer-to-water map"));

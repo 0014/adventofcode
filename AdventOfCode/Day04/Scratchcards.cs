@@ -1,10 +1,10 @@
-﻿namespace AdventOfCode2023.Day4
+﻿namespace AdventOfCode2023.Day04
 {
     public static class Scratchcards
     {
         public static int CalculateTotalPoints()
         {
-            var cards = File.ReadAllLines("Day4\\cards.txt");
+            var cards = File.ReadAllLines("Day04\\cards.txt");
 
             var sum = 0;
             foreach (var card in cards)
@@ -25,7 +25,7 @@
 
         public static int CountCardsWon()
         {
-            var cards = File.ReadAllLines("Day4\\cards.txt");
+            var cards = File.ReadAllLines("Day04\\cards.txt");
 
             var totalCards = new int[cards.Length];
             Array.Fill(totalCards, 1);

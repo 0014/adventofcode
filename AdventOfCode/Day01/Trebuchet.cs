@@ -1,10 +1,10 @@
-﻿namespace AdventOfCode2023.Day1
+﻿namespace AdventOfCode2023.Day01
 {
     public static class Trebuchet
     {
         public static int CalibrationValue()
         {
-            var calibrationValues = File.ReadAllLines("Day1\\calibration-document.txt");
+            var calibrationValues = File.ReadAllLines("Day01\\calibration-document.txt");
 
             var sum = 0;
             foreach (var calibrationValue in calibrationValues)
@@ -25,7 +25,7 @@
 
         public static int CorrectedCalibrationValue()
         {
-            var calibrationValues = File.ReadAllLines("Day1\\calibration-document.txt");
+            var calibrationValues = File.ReadAllLines("Day01\\calibration-document.txt");
 
             var sum = 0; var firstDigit = 0; var lastDigit = 0;
             foreach (var calibrationValue in calibrationValues)

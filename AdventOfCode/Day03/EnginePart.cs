@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2023.Day3
+﻿namespace AdventOfCode2023.Day03
 {
     public class EnginePart
     {

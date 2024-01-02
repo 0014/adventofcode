@@ -1,8 +1,8 @@
-﻿namespace AdventOfCode2023.Day7
+﻿namespace AdventOfCode2023.Day07
 {
     public static class CamelCards
     {
-        private static string[] HandsInfo => File.ReadAllLines("Day7\\hands.txt");
+        private static string[] HandsInfo => File.ReadAllLines("Day07\\hands.txt");
 
         public static int TotalWinnings()
         {

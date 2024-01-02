@@ -1,17 +1,17 @@
-﻿namespace AdventOfCode2023.Day9
+﻿namespace AdventOfCode2023.Day09
 {
     public static class MirageMaintenance
     {
         public static int ExtrapolateOasisData()
         {
-            var historicalData = File.ReadAllLines("Day9\\data.txt");
+            var historicalData = File.ReadAllLines("Day09\\data.txt");
 
             return historicalData.Sum(line => BuildData(line).Extrapolate());
         }
 
         public static int ExtrapolateBackwardsOasisData()
         {
-            var historicalData = File.ReadAllLines("Day9\\data.txt");
+            var historicalData = File.ReadAllLines("Day09\\data.txt");
 
             return historicalData.Sum(line => BuildData(line).ExtrapolateBackwards());
         }

@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2023.Day2
+﻿namespace AdventOfCode2023.Day02
 {
     public static class CubeConundrum
     {
@@ -8,7 +8,7 @@
 
         public static int PlayGame()
         {
-            var gameList = File.ReadAllLines("Day2\\games.txt");
+            var gameList = File.ReadAllLines("Day02\\games.txt");
 
             var sum = 0;
             for(var i = 1; i < gameList.Length + 1; i++)
@@ -46,7 +46,7 @@
 
         public static int PowerOfMinimumSet()
         {
-            var gameList = File.ReadAllLines("Day2\\games.txt");
+            var gameList = File.ReadAllLines("Day02\\games.txt");
 
             var sum = 0;
             for (var i = 1; i < gameList.Length + 1; i++)
